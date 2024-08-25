@@ -3,10 +3,8 @@ import java.util.Scanner;
 
 /**
  * 
- * Programação de soluções computacionais - Una Sete Lagoas
- *
- * Professor: Fabrício Valadares
- *
+ * Programação de soluções computacionais - Una Sete Lagoas *
+ * Professor: Fabrício Valadares *
  * Introcução à programação usando java.
  */
 
@@ -34,5 +32,11 @@ public class Main {
         teste = input.nextLine();
         System.out.print("Por favor, informe seu teste2: ");
         teste2 = input.nextLine();
+
+        System.out.println("\n");
+        System.out.println("Os dados informados foram: ");
+        System.out.println("Nome completo: " + nomeCompleto);
+        System.out.println("Idade: " + idade);
+        System.out.println("Teste... " + teste);
     }
 }
