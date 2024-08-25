@@ -17,7 +17,7 @@ public class Main {
         String nomeCompleto; // String - texto
         int idade; // int - Número inteiro I = {0, 1, 2, ..., 8, 9...}
         String teste;
-        String teste2;
+        DadosPessoais dp;
 
         // Criação do objeto resposável pela leitura de dados vindos do teclado. (input é apenas uma sugestão)
         Scanner input = new Scanner(System.in);
@@ -30,13 +30,10 @@ public class Main {
         input.skip("[\r\n]");
         System.out.print("Por favor, informe seu teste: ");
         teste = input.nextLine();
-        System.out.print("Por favor, informe seu teste2: ");
-        teste2 = input.nextLine();
+
+        dp = new DadosPessoais(nomeCompleto, idade);
 
         System.out.println("\n");
-        System.out.println("Os dados informados foram: ");
-        System.out.println("Nome completo: " + nomeCompleto);
-        System.out.println("Idade: " + idade);
-        System.out.println("Teste... " + teste);
+        System.out.println(dp);
     }
 }
